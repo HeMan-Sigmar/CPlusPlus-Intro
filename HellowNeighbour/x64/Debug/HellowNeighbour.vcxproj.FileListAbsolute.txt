@@ -1,0 +1,2 @@
+C:\Users\s214773\Documents\introduction-to-c-HeMan-Sigmar\HellowNeighbour\x64\Debug\HellowNeighbour.exe
+C:\Users\s214773\Documents\HellowNeighbour\x64\Debug\HellowNeighbour.exe
