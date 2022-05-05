@@ -10,6 +10,7 @@ int main(int argc, char** argv)
 {
 	const int NUM_NUMBERS = 10;
 	int numbers[NUM_NUMBERS] = { 10, 20, 30, 40, 50, 10, 20, 30, 40, 50 };
+	size_t n = sizeof(numbers) / sizeof(numbers[0]);
 
 	// In C++, an array is simply a pointer to the first value
 	// when passing an array through a function parameter, we loose the length information
@@ -28,20 +29,36 @@ int main(int argc, char** argv)
 
 
 int MinValue(const int* arr, int count)
+// TODO: loop through the array, return the smallest value
 {
-	// TODO: loop through the array, return the smallest value
+	int temp = arr[0];
+	for (int i = 0; i < count; i++)
+	{
+		if (temp > arr[i]) {
+			temp = arr[i];
+		}
+	}
 	return 0;
 }
 
-int MaxValue(const int* arr, int count)
-{
-	// TODO: loop through the array, return the largest value
-	return 0;
-}
+	int MaxValue(const int* arr, int count)
+	{
+		for (int i = 0; i < 10; i++)
+		{
+			std::cout << i << ' ';
 
-int CountOccurencesOfValue(const int* arr, int count, int search)
-{
-	// TODO: loop through the array, return the largest value
-	return 0;
-}
+		}
+		// TODO: loop through the array, return the largest value
+		return 0;
+	}
 
+	int CountOccurencesOfValue(const int* arr, int count, int search)
+	{
+		for (int i = 0; i < 10; i++)
+		{
+			std::cout << i << ' ';
+
+		}
+		// TODO: loop through the array, return the largest value
+		return 0;
+	}

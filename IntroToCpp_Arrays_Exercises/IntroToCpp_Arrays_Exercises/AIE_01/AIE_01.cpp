@@ -5,18 +5,21 @@ int main(int argc, char** argv)
 {
 	const int NUM_NUMBERS = 5;
 	int numbers[NUM_NUMBERS] = { 10, 20, 30, 40, 50 };
-
-	/* 
+	size_t n = sizeof(numbers) / sizeof(numbers[0]);
+	/*
 	TODO: Print each value of the array in order
 	Expected:
 		10, 20, 30, 40, 50,
 	*/
 	// Task1: Write your Code here
 	// ------------------------------------------------------------------------
-	std::cout << "Expected: 10 || Got: " << ;
-	std::cout << "Expected: 50 || Got: " << ;
-	std::cout << "Expected: 2 || Got: " << ;
-	std::cout << "Expected: 10 || Got: " << ;
+	for (int i = 0; i < n; i++)
+	{
+		std::cout << numbers[i] << ' ';
+
+
+	}
+	
 
 	// ------------------------------------------------------------------------
 
@@ -29,7 +32,9 @@ int main(int argc, char** argv)
 
 	// Task 2: Write your Code here
 	// ------------------------------------------------------------------------
-
+	for (int i = n - 1; i >= 0; i--) {
+		std::cout << numbers[i] << ' ';
+	};
 
 	// ------------------------------------------------------------------------
 

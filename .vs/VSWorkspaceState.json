@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\IntroToCpp_Arrays_Exercises",
+    "\\IntroToCpp_Arrays_Exercises\\IntroToCpp_Arrays_Exercises",
+    "\\IntroToCpp_Arrays_Exercises\\IntroToCpp_Arrays_Exercises\\AIE_01"
   ],
-  "SelectedNode": "\\IntroToCpp_Arrays_Exercises.sln",
+  "SelectedNode": "\\IntroToCpp_Arrays_Exercises\\IntroToCpp_Arrays_Exercises\\AIE_01\\AIE_01.cpp",
   "PreviewInSolutionExplorer": false
 }
