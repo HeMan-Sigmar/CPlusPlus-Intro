@@ -38,27 +38,27 @@ int MinValue(const int* arr, int count)
 			temp = arr[i];
 		}
 	}
-	return 0;
+	return temp;
 }
 
 	int MaxValue(const int* arr, int count)
 	{
-		for (int i = 0; i < 10; i++)
+		int temp = arr[0];
+		for (int i = 0; i < count; i++)
 		{
-			std::cout << i << ' ';
-
+			if (temp < arr[i]) {
+				temp = arr[i];
+			}
 		}
-		// TODO: loop through the array, return the largest value
-		return 0;
+	return temp;
 	}
 
 	int CountOccurencesOfValue(const int* arr, int count, int search)
 	{
-		for (int i = 0; i < 10; i++)
-		{
-			std::cout << i << ' ';
-
-		}
+		int result = 0;
+		for (int i = 0; i < count; i++)
+			if (search == arr[i])
+				result++;
+		return result;
 		// TODO: loop through the array, return the largest value
-		return 0;
 	}
