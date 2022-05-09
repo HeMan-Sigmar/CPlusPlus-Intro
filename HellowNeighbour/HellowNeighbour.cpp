@@ -126,30 +126,43 @@ int main()
 
 #pragma endregion
 
-#pragma region MyRegion
+//#pragma region MyRegion
+//
+//int grid[3][3];
+//int number = 0;
+//
+//for (int row = 0; row < 3; row++)
+//{
+//	for (int col = 0; col < 3; col++)
+//	{
+//		grid[row][col] = number++;
+//	}
+//}
+//for (int row = 0; row < 3; row++)
+//{
+//	for (int col = 0; col < 3; col++)
+//	{
+//		std::cout << "|" << grid[row][col] << "|";
+//	}
+//	std::cout << std::endl;
+//}
+//#pragma endregion
 
-int grid[3][3];
-int number = 0;
 
-for (int row = 0; row < 3; row++)
-{
-	for (int col = 0; col < 3; col++)
+	int MinValue(const int* arr, int count)
 	{
-		grid[row][col] = number++;
+		// TODO: loop through the array, return the smallest value
+		{
+			int temp = arr[0];
+			for (int i = 0; i < 10; i++)
+			{
+				if (arr[i] > temp) {
+					temp = arr[i];
+				}
+			}
+			return 0;
+		}
 	}
-}
-for (int row = 0; row < 3; row++)
-{
-	for (int col = 0; col < 3; col++)
-	{
-		std::cout << "|" << grid[row][col] << "|";
-	}
-	std::cout << std::endl;
-}
-#pragma endregion
-
-	
-	
 }
 
 

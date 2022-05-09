@@ -27,7 +27,6 @@ int main(int argc, char** argv)
 
 
 
-
 	// ------------------------------------------------------------------------
 
 
@@ -72,12 +71,12 @@ int main(int argc, char** argv)
 	//		c0, c1, c2, c3, c4,
 	// ------------------------------------------------------------------------
 
-	for (int rowIndex = 0; rowIndex < ROWS; rowIndex++)
+	for (int rowIndex = 0; rowIndex < ROWS; ++rowIndex)
 	{
 		for (int colIndex = 0; colIndex < COLS; colIndex++)
 		{
 			// TODO: calculate "index" based on rowIndex/colIndex value
-			int index = 0; 
+			int index = (rowIndex * COLS) + colIndex;
 
 			// use the resulting index to print the value
 			std::cout << grid1D[index] << ", ";

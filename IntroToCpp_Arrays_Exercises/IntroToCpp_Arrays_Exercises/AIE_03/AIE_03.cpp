@@ -43,6 +43,9 @@ const int* BinarySearch(const int* arr, int count, int searchVal)
 {
 	// TODO: Implement a binary search
 	// the array is assumed to be sorted
+	{
+
+	}
 
 	// This method should:
 	//	- Return: nullptr if the value is not found
