@@ -35,12 +35,17 @@ bool IsArraySorted(const int* arr, int count)
 void SortArray(int* arr, int count)
 {
 	// TODO: 
-
-	for (int i = 0; i < count; i++) {
-		
+	int temp, i, j;
+	for (i = 0; i < count; ++i) {
+		for (j = 0; j < count - 1; ++j) {
+			if (arr[j] > arr[i]) {
+				temp = arr[i]; //swap them
+				arr[i] = arr[j];
+				arr[j] = temp;
+				std::cout << temp;
+			}
+		}
 	}
 	// modify the values in the array so that when this method returns
-	// all values are sorted in ascending order
-
-
+		// all values are sorted in ascending order
 }

@@ -24,7 +24,32 @@ int main(int argc, char** argv)
 	//		b0, b1, b2, b3, b4,
 	//		c0, c1, c2, c3, c4,
 	// ------------------------------------------------------------------------
+	std::cout << "Grid\n" << std::endl;
 
+	int arrayxy[ROWS][COLS];
+
+	// Fill array with 0 values 
+	for (int i = 0; i < 3; ++i)
+	{
+		for (int j = 0; j < 5; ++j)
+		{
+			arrayxy[i][j] = 0;
+		}
+	}
+
+	// Print array as grid
+	for (int i = 0; i < 3; ++i)
+	{
+		for (int j = 0; j < 5; ++j)
+		{
+			std::cout << arrayxy[i][j];
+		}
+		std::cout << '\n';
+	}
+
+	std::cout << std::endl;
+
+	return 0;
 
 
 	// ------------------------------------------------------------------------

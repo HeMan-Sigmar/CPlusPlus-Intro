@@ -39,17 +39,35 @@ void TestResult(const int* result, int* const expected)
 		(expected == nullptr ? "nullptr" : std::to_string(*expected).c_str()) << ")" << std::endl;
 }
 
-const int* BinarySearch(const int* arr, int count, int searchVal)
-{
+const int* BinarySearch(const int* arr, int count, int searchVal){
 	// TODO: Implement a binary search
 	// the array is assumed to be sorted
 	{
-
+		int start, end, mid;
+		start = 0;
+		end = count - 1;
+		while (start <= end)
+		{
+			mid = (start + end) / 2;
+			if (arr[mid] == searchVal)
+			{
+				return mid;
+			}
+			else if (searchVal > arr[mid])
+			{
+				start = mid + 1;
+			}
+			else if (searchVal < arr[mid])
+			{
+				end = mid - 1;
+			}
+			return nullptr;
+			
+		}
 	}
 
 	// This method should:
 	//	- Return: nullptr if the value is not found
 	//  - Return: pointer to the found value in the array
 	
-	return nullptr;
 }
