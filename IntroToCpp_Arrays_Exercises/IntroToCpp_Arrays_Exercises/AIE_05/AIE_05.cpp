@@ -24,32 +24,17 @@ int main(int argc, char** argv)
 	//		b0, b1, b2, b3, b4,
 	//		c0, c1, c2, c3, c4,
 	// ------------------------------------------------------------------------
-	std::cout << "Grid\n" << std::endl;
 
-	int arrayxy[ROWS][COLS];
 
-	// Fill array with 0 values 
-	for (int i = 0; i < 3; ++i)
+	 //Print array as grid
+	for (int rows = 0; rows < ROWS; rows++)
 	{
-		for (int j = 0; j < 5; ++j)
+		for (int cols = 0; cols < COLS; cols++)
 		{
-			arrayxy[i][j] = 0;
+			std::cout << grid2D[rows][cols] << ",";
 		}
+		std::cout << std::endl;
 	}
-
-	// Print array as grid
-	for (int i = 0; i < 3; ++i)
-	{
-		for (int j = 0; j < 5; ++j)
-		{
-			std::cout << arrayxy[i][j];
-		}
-		std::cout << '\n';
-	}
-
-	std::cout << std::endl;
-
-	return 0;
 
 
 	// ------------------------------------------------------------------------
@@ -69,8 +54,8 @@ int main(int argc, char** argv)
 	for (int index = 0; index < ROWS * COLS; index++)
 	{
 		// TODO: convert "index" to a "rowIndex" and "colIndex" value
-		int rowIndex = 0;
-		int colIndex = 0;
+		int rowIndex = index / COLS;
+		int colIndex = index % COLS;
 
 		// use the resulting row and column index to print the value
 		std::cout << grid2D[rowIndex][colIndex] << ", ";
@@ -96,7 +81,7 @@ int main(int argc, char** argv)
 	//		c0, c1, c2, c3, c4,
 	// ------------------------------------------------------------------------
 
-	for (int rowIndex = 0; rowIndex < ROWS; ++rowIndex)
+	for (int rowIndex = 0; rowIndex < ROWS; rowIndex++)
 	{
 		for (int colIndex = 0; colIndex < COLS; colIndex++)
 		{
