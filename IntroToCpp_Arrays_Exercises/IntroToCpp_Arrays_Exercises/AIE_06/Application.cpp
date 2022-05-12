@@ -37,7 +37,8 @@ void Application::Load()
 	// -----------------------------------------------------
 	
 	// write your code here
-
+	const int NUM_ITEMS = 6;
+	int numbers[NUM_ITEMS] = { 0 , 1, 2, 3, 4 ,5};
 	// -----------------------------------------------------
 }
 
@@ -81,15 +82,21 @@ void Application::Draw()
 	// 	   We have created a helper function you can use "GetTileColor"
 	// --------------------------------------------------------------------
 	// write your code here
-	float xPos = 0;
-	float yPos = 0;
-	Color color = GetTileColor(1); // pass in the tilevalue
 
-	DrawRectangle(xPos, yPos, m_tileWidth, m_tileHeight, color);
+	for (int rowIndex = 0; rowIndex < ROWS; rowIndex++)
+	{
+		for (int colIndex = 0; colIndex < COLS; colIndex++)
+		{
+			float xPos = colIndex * m_tileWidth;
+			float yPos = rowIndex * m_tileHeight;
+			int index = (rowIndex * COLS) + colIndex;
+			Color color = GetTileColor(1); // pass in the tilevalue
+			DrawRectangle(xPos, yPos, m_tileWidth, m_tileHeight, color);
+		}
+		// --------------------------------------------------------------------
 
-	// --------------------------------------------------------------------
-
-	EndDrawing();
+		EndDrawing();
+	}
 }
 
 Color Application::GetTileColor(int tileValue)

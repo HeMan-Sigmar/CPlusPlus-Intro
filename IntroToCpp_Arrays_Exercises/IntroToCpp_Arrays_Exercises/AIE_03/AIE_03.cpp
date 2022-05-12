@@ -12,6 +12,7 @@ int main(int argc, char** argv)
 	const int NUM_ITEMS = 8;
 	int arr1[NUM_ITEMS] = { 1, 3, 5, 7, 9, 11, 13, 15 };
 
+
 	// The numbers in the array are assumed to be sorted
 	// search for the values 9, 1, 15, 0
 
@@ -43,15 +44,15 @@ const int* BinarySearch(const int* arr, int count, int searchVal){
 	// TODO: Implement a binary search
 	// the array is assumed to be sorted
 	{
-		int start, end, mid;
+		int start, end;
 		start = 0;
 		end = count - 1;
 		while (start <= end)
 		{
-			mid = (start + end) / 2;
-			if (arr[mid] == searchVal)
+			int mid = (start + end) / 2;
+			if (searchVal == arr[mid])
 			{
-				return mid;
+				return &arr[mid];
 			}
 			else if (searchVal > arr[mid])
 			{
@@ -61,9 +62,9 @@ const int* BinarySearch(const int* arr, int count, int searchVal){
 			{
 				end = mid - 1;
 			}
-			return nullptr;
 			
 		}
+		return nullptr;
 	}
 
 	// This method should:
