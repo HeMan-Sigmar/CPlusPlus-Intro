@@ -1,5 +1,6 @@
 #include "DataFile.h"
 #include <fstream>
+#include "raylib.h"
 using namespace std;
 
 DataFile::DataFile()
