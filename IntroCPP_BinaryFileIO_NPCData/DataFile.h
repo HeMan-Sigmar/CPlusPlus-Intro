@@ -17,16 +17,18 @@ public:
 
 private:
 	int recordCount;
-	std::vector<Record*> records;	// delete this vector. Load only the required record 
-
+	//std::vector<Record*> records;	// delete this vector. Load only the required record 
 
 
 public:
+
+	Record* Record ();
+
 	DataFile();
 	~DataFile();
 
 	void AddRecord(string imageFilename, string name, int age);
-	Record* GetRecord(int index);
+	//Record* GetRecord(int index);
 
 	int GetRecordCount() { return recordCount; };
 

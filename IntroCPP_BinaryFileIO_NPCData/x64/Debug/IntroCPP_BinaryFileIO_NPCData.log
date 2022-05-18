@@ -1,0 +1,7 @@
+﻿  DataFile.cpp
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(37,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(42,20): error C3861: 'GetImageData': identifier not found
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(45,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(88,15): error C3861: 'LoadImageEx': identifier not found
+  main.cpp
+  Generating Code...
