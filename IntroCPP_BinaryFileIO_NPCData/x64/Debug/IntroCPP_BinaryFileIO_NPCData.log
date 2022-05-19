@@ -1,7 +1,28 @@
 ﻿  DataFile.cpp
-C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(37,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(42,20): error C3861: 'GetImageData': identifier not found
-C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(45,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(88,15): error C3861: 'LoadImageEx': identifier not found
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(25,10): error C2039: 'push_back': is not a member of 'DataFile::Record'
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.h(12): message : see declaration of 'DataFile::Record'
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(31,22): error C2676: binary '[': 'DataFile::Record' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(38,28): error C2039: 'size': is not a member of 'DataFile::Record'
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.h(12): message : see declaration of 'DataFile::Record'
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(43,42): error C2676: binary '[': 'DataFile::Record' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(43,20): error C3861: 'GetImageData': identifier not found
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(45,44): error C2676: binary '[': 'DataFile::Record' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(45,70): error C2676: binary '[': 'DataFile::Record' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(46,27): error C2676: binary '[': 'DataFile::Record' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(49,34): error C2676: binary '[': 'DataFile::Record' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(50,34): error C2676: binary '[': 'DataFile::Record' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(56,33): error C2676: binary '[': 'DataFile::Record' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(57,34): error C2676: binary '[': 'DataFile::Record' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(58,7): error C2059: syntax error: ')'
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(59,3): error C2143: syntax error: missing ';' before '{'
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(62,3): error C2181: illegal else without matching if
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(97,15): error C3861: 'LoadImageEx': identifier not found
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(108,11): error C2039: 'push_back': is not a member of 'DataFile::Record'
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.h(12): message : see declaration of 'DataFile::Record'
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(119,30): error C2039: 'size': is not a member of 'DataFile::Record'
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.h(12): message : see declaration of 'DataFile::Record'
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(121,19): error C2676: binary '[': 'DataFile::Record' does not define this operator or a conversion to a type acceptable to the predefined operator
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(123,10): error C2039: 'clear': is not a member of 'DataFile::Record'
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.h(12): message : see declaration of 'DataFile::Record'
   main.cpp
   Generating Code...

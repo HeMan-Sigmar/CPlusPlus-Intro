@@ -55,6 +55,14 @@ void DataFile::Save(string filename)
 		outfile.write((char*)imgdata, imageSize);
 		outfile.write((char*)records[i]->name.c_str(), nameSize);
 		outfile.write((char*)&records[i]->age, ageSize);
+		if ()
+		{
+			;
+		}
+		else
+		{
+			;
+		}
 	}
 
 	outfile.close();
