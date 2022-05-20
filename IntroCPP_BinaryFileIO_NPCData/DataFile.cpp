@@ -10,67 +10,60 @@ DataFile::DataFile()
 
 DataFile::~DataFile()
 {
-	Clear();
+	//Clear();
 }
 
-void DataFile::AddRecord(string imageFilename, string name, int age)
-{
-	Image i = LoadImage(imageFilename.c_str());
-
-	Record* r = new Record;
-	r->image = i;
-	r->name = name;
-	r->age = age;
-
-	records.push_back(r);
-	recordCount++;
-}
+//void DataFile::AddRecord(string imageFilename, string name, int age)
+//{
+//	Image i = LoadImage(imageFilename.c_str());
+//
+//	Record* r = new Record;
+//	r->image = i;
+//	r->name = name;
+//	r->age = age;
+//
+//	records.push_back(r);
+//	recordCount++;
+//}
 
 DataFile::Record* DataFile::GetRecord(int index)
 {
 	return records[index];
 }
 
-void DataFile::Save(string filename)
-{
-	ofstream outfile(filename, ios::binary);
-
-	int recordCount = records.size();
-	outfile.write((char*)&recordCount, sizeof(int));
-
-	for (int i = 0; i < recordCount; i++)
-	{		
-		Color* imgdata = GetImageData(records[i]->image);
-				
-		int imageSize = sizeof(Color) * records[i]->image.width * records[i]->image.height;
-		int nameSize = records[i]->name.length();
-		int ageSize = sizeof(int);
-
-		outfile.write((char*)&records[i]->image.width, sizeof(int));
-		outfile.write((char*)&records[i]->image.height, sizeof(int));
-		
-		outfile.write((char*)&nameSize, sizeof(int));
-		outfile.write((char*)&ageSize, sizeof(int));
-
-		outfile.write((char*)imgdata, imageSize);
-		outfile.write((char*)records[i]->name.c_str(), nameSize);
-		outfile.write((char*)&records[i]->age, ageSize);
-		if ()
-		{
-			;
-		}
-		else
-		{
-			;
-		}
-	}
-
-	outfile.close();
-}
+//void DataFile::Save(string filename)
+//{
+//	ofstream outfile(filename, ios::binary);
+//
+//	int recordCount = records.size();
+//	outfile.write((char*)&recordCount, sizeof(int));
+//
+//	for (int i = 0; i < recordCount; i++)
+//	{		
+//		Color* imgdata = GetImageData(records[i]->image);
+//				
+//		int imageSize = sizeof(Color) * records[i]->image.width * records[i]->image.height;
+//		int nameSize = records[i]->name.length();
+//		int ageSize = sizeof(int);
+//
+//		outfile.write((char*)&records[i]->image.width, sizeof(int));
+//		outfile.write((char*)&records[i]->image.height, sizeof(int));
+//		
+//		outfile.write((char*)&nameSize, sizeof(int));
+//		outfile.write((char*)&ageSize, sizeof(int));
+//
+//		outfile.write((char*)imgdata, imageSize);
+//		outfile.write((char*)records[i]->name.c_str(), nameSize);
+//		outfile.write((char*)&records[i]->age, ageSize);
+//
+//	}
+//
+//	outfile.close();
+//}
 
 void DataFile::Load(string filename)
 {
-	Clear();
+	//Clear();
 
 	ifstream infile(filename, ios::binary);
 
@@ -114,12 +107,12 @@ void DataFile::Load(string filename)
 	infile.close();
 }
 
-void DataFile::Clear()
-{
-	for (int i = 0; i < records.size(); i++)
-	{
-		delete records[i];
-	}
-	records.clear();
-	recordCount = 0;
-}
+//void DataFile::Clear()
+//{
+//	for (int i = 0; i < records.size(); i++)
+//	{
+//		delete records[i];
+//	}
+//	records.clear();
+//	recordCount = 0;
+//}
