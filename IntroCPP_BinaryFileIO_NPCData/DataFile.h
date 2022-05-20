@@ -19,23 +19,21 @@ public:
 private:
 	int recordCount;
 	//vector<Record*> records;	// delete this vector. Load only the required record 
-	Record records;
+	Record record ;
 
 public:
 	DataFile();
 	~DataFile();
-
-	void AddRecord(string imageFilename, string name, int age);
+	//void AddRecord(string imageFilename, string name, int age);
 	Record* GetRecord(int index);
-
-
+	Record records{ nullptr };
 	int GetRecordCount() { return recordCount; };
 
-	void Save(string filename);
-	void Load(string filename);
+	//void Save(string filename);
+	void Load(string filename, unsigned int index);
 
 private:
-	void Clear();
+	//void Clear();
 
 };
 
