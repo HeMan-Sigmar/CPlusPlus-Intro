@@ -19,7 +19,7 @@ public:
 private:
 	int recordCount;
 	//vector<Record*> records;	// delete this vector. Load only the required record 
-	Record record ;
+	Record records;
 
 public:
 	DataFile();
