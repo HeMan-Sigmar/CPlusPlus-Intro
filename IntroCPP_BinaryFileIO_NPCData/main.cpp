@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
     DataFile data;
     int currentRecordIdx = 0;
 
-    data.Load("npc_data.dat");
+    data.Load("npc_data.dat", currentRecordIdx);
 
     DataFile::Record* currentRecord = data.GetRecord(currentRecordIdx);
     Texture2D recordTexture = LoadTextureFromImage(currentRecord->image);
@@ -58,6 +58,7 @@ int main(int argc, char* argv[])
             {
                 currentRecordIdx = 0;
             }
+            data.Load("npc_data.dat", currentRecordIdx);            // call load again but with currentRecordIdx
             currentRecord = data.GetRecord(currentRecordIdx);
             recordTexture = LoadTextureFromImage(currentRecord->image);
         }
@@ -65,10 +66,11 @@ int main(int argc, char* argv[])
         if (IsKeyPressed(KEY_RIGHT))
         {
             currentRecordIdx++;
-            if (currentRecordIdx >= data.GetRecordCount())
+            if (currentRecordIdx > data.GetRecordCount())
             {
                 currentRecordIdx = data.GetRecordCount();
             }
+            data.Load("npc_data.dat", currentRecordIdx);             // call load again but with currentRecordIdx
             currentRecord = data.GetRecord(currentRecordIdx);
             recordTexture = LoadTextureFromImage(currentRecord->image);
         }

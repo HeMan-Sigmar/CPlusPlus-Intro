@@ -13,28 +13,27 @@ public:
 		Image image;
 		string name;
 		int age;
+
 	};
 
 private:
 	int recordCount;
-	std::vector<Record*> records;	// delete this vector. Load only the required record 
-
-
+	//vector<Record*> records;	// delete this vector. Load only the required record 
+	Record records;
 
 public:
 	DataFile();
 	~DataFile();
-
-	void AddRecord(string imageFilename, string name, int age);
+	//void AddRecord(string imageFilename, string name, int age);
 	Record* GetRecord(int index);
-
+	Record records{ nullptr };
 	int GetRecordCount() { return recordCount; };
 
-	void Save(string filename);
-	void Load(string filename);
+	//void Save(string filename);
+	void Load(string filename, unsigned int index);
 
 private:
-	void Clear();
+	//void Clear();
 
 };
 
