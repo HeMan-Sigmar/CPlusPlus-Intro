@@ -25,8 +25,8 @@ public:
 	DataFile();
 	~DataFile();
 	//void AddRecord(string imageFilename, string name, int age);
-	Record* GetRecord(int index);
-	Record records{ nullptr };
+	Record GetRecord(int index);
+	//Record records{ nullptr };
 	int GetRecordCount() { return recordCount; };
 
 	//void Save(string filename);

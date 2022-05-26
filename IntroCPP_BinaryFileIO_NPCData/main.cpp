@@ -36,8 +36,8 @@ int main(int argc, char* argv[])
 
     data.Load("npc_data.dat", currentRecordIdx);
 
-    DataFile::Record* currentRecord = data.GetRecord(currentRecordIdx);
-    Texture2D recordTexture = LoadTextureFromImage(currentRecord->image);
+    DataFile::Record currentRecord = data.GetRecord(currentRecordIdx);
+    Texture2D recordTexture = LoadTextureFromImage(currentRecord.image);
 
 
     SetTargetFPS(60);
@@ -60,19 +60,19 @@ int main(int argc, char* argv[])
             }
             data.Load("npc_data.dat", currentRecordIdx);            // call load again but with currentRecordIdx
             currentRecord = data.GetRecord(currentRecordIdx);
-            recordTexture = LoadTextureFromImage(currentRecord->image);
+            recordTexture = LoadTextureFromImage(currentRecord.image);
         }
 
         if (IsKeyPressed(KEY_RIGHT))
         {
             currentRecordIdx++;
-            if (currentRecordIdx > data.GetRecordCount())
+            if (currentRecordIdx > data.GetRecordCount()-1)
             {
-                currentRecordIdx = data.GetRecordCount();
+                currentRecordIdx = data.GetRecordCount()-1;
             }
             data.Load("npc_data.dat", currentRecordIdx);             // call load again but with currentRecordIdx
             currentRecord = data.GetRecord(currentRecordIdx);
-            recordTexture = LoadTextureFromImage(currentRecord->image);
+            recordTexture = LoadTextureFromImage(currentRecord.image);
         }
 
 
@@ -85,10 +85,10 @@ int main(int argc, char* argv[])
         DrawTexture(recordTexture, 300, 50, WHITE);
 
         DrawText("NAME", 10, 50, 20, LIGHTGRAY);
-        DrawText(currentRecord->name.c_str(), 10, 80, 20, LIGHTGRAY);
+        DrawText(currentRecord.name.c_str(), 10, 80, 20, LIGHTGRAY);
 
         DrawText("AGE", 10, 120, 20, LIGHTGRAY);
-        DrawText(to_string(currentRecord->age).c_str(), 10, 150, 20, LIGHTGRAY);
+        DrawText(to_string(currentRecord.age).c_str(), 10, 150, 20, LIGHTGRAY);
 
         EndDrawing();
         //----------------------------------------------------------------------------------

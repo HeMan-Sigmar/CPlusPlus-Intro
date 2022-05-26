@@ -49,9 +49,9 @@ DataFile::~DataFile()
 //	recordCount++;
 //}
 
-DataFile::Record* DataFile::GetRecord(int index)
+DataFile::Record DataFile::GetRecord(int index)
 {
-	return &record;
+	return record;
 }
 
 //void DataFile::Save(string filename)
@@ -89,16 +89,14 @@ void DataFile::Load(string filename, unsigned int index)
 	//Clear();
 
 	ifstream infile(filename, ios::binary);
-
 	recordCount = 0;
-	infile.read((char*)&recordCount, sizeof(int));
+	infile.read((char*)&recordCount, sizeof(int)); //record count is 5 (in the file)
+	int nameSize = 0;
+	int ageSize = 0;
+	int width = 0, height = 0, format = 0, imageSize = 0;
 
-	for (int i = 0; i < recordCount; i++)
-	{		
-		int nameSize = 0;
-		int ageSize = 0;
-		int width = 0, height = 0, format = 0, imageSize = 0;
-
+	for (int i = 0; i <= index; i++)
+	{				
 		infile.read((char*)&width, sizeof(int));
 		infile.read((char*)&height, sizeof(int));
 
@@ -107,46 +105,41 @@ void DataFile::Load(string filename, unsigned int index)
 		infile.read((char*)&nameSize, sizeof(int));
 		infile.read((char*)&ageSize, sizeof(int));
 
-
-
 		if (i == index)		// if i == index then load record
 		{
 			char* imgdata = new char[imageSize];
 			infile.read(imgdata, imageSize);
+
 			Image img = LoadImageEx((Color*)imgdata, width, height);
-			char* name = new char[nameSize];
+			char* name = new char[nameSize +1];
+			name[nameSize] = '\0';
 			int age = 0;
 
 			infile.read((char*)name, nameSize);
 			infile.read((char*)&age, ageSize);
 
-			Record* record = new Record();
-			record->image = img;
-			record->name = string(name);
-			record->age = age;
-			records = { record };	// no push back because no vector
+			//Record record;
+			record.image = img;
+			record.name = name;
+			record.age = age;
+		
+			//records = { record };	// no push back because no vector so replaced with record
 			
 			delete[] imgdata;
 			delete[] name;
-
 		}
-		else
+		else // else skip record using seekg with std::ios::cur by the size of the record
 		{
-			infile.seekg(nameSize + ageSize + imageSize, std::ios::cur);
+			infile.seekg(nameSize + ageSize + imageSize, std::ios::cur);	// size of the record is based on imageSize, nameSize and ageSize
 		}
-		// else skip record using seekg with std::ios::cur by the size of the record
-		// size of the record is based on imageSize, nameSize and ageSize
-
-
+		
 		//Record* r = new Record();
 		//r.image = img;
 		//r->name = string(name);
 		//r->age = age;
 		//records = { r };
 
-
 	}
-
 	infile.close();
 }
 

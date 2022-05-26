@@ -1,4 +1,3 @@
 ﻿  DataFile.cpp
-  main.cpp
-  Generating Code...
-LINK : fatal error LNK1104: cannot open file 'raylib.lib'
+C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\DataFile.cpp(98,20): warning C4018: '<=': signed/unsigned mismatch
+  IntroCPP_BinaryFileIO_NPCData.vcxproj -> C:\Users\s214773\source\repos\CPlusPlus-Intro\IntroCPP_BinaryFileIO_NPCData\bin\x64\Debug\IntroCPP_BinaryFileIO_NPCData.exe
