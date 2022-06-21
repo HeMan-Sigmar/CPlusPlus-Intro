@@ -6,7 +6,7 @@
         float deltaTime = 0;
         InitWindow(800, 600, "Bonk");
         SetWindowState(FLAG_VSYNC_HINT);
-        //meme
+        //memes
         // Initialization
         //--------------------------------------------------------------------------------------
         
