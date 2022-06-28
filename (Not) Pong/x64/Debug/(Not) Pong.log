@@ -1,9 +1,11 @@
 ﻿  Main.cpp
-C:\Users\s214773\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(54,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\s214773\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(62,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\s214773\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(63,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\s214773\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(87,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\s214773\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(125,36): warning C4305: '*=': truncation from 'double' to 'float'
-C:\Users\s214773\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(143,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\s214773\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(144,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  (Not) Pong.vcxproj -> C:\Users\s214773\source\repos\CPlusPlus-Intro\(Not) Pong\x64\Debug\(Not) Pong.exe
+C:\Users\User\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(55,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(63,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(64,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(88,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(114,43): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(123,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(143,36): warning C4305: '*=': truncation from 'double' to 'float'
+C:\Users\User\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(164,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\User\source\repos\CPlusPlus-Intro\(Not) Pong\Main.cpp(165,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  (Not) Pong.vcxproj -> C:\Users\User\source\repos\CPlusPlus-Intro\(Not) Pong\x64\Debug\(Not) Pong.exe

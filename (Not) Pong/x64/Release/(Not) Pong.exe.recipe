@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\User\source\repos\CPlusPlus-Intro\(Not) Pong\x64\Debug\(Not) Pong.exe</FullPath>
+      <FullPath>C:\Users\User\source\repos\CPlusPlus-Intro\(Not) Pong\x64\Release\(Not) Pong.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
